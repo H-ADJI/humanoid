@@ -2,10 +2,9 @@
 
 ## Problematic
 
-One of the biggest challenges in web scraping is blocking which can be caused by hundreds of different reasons. However, we can reduce all of
-these reasons to a single fact :
-> web scrapers appears differently to websites and servers compared to a web browser used by a normal internet user.
+One of the most difficult challenges in web scraping is blocking, which can occur for a variety of reasons. All of these reasons, however, can be reduced to a single fact:
+> Web scrapers appear to websites and servers differently than a normal internet user's web browser.
 
 ## Objective
 
-The purpose of this repository is to list all factors that can be used by security systems to differentiate between normal users and web scrapers, and to suggest possible implementations to imitate a normal users behavior.
+The goal of this repository is to compile a list of all factors that security systems can use to distinguish between normal users and web scrapers, as well as to suggest possible implementations to mimic normal user behavior..
