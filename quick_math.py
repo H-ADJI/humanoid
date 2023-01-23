@@ -54,7 +54,7 @@ def random_control_point():
     pass
 
 
-def fitts_law(current_pos: tuple, target_pos: tuple, target_width: int, min_steps: int = 200, difficulty_scaling_coef: int = 20):
+def fitts_law(current_pos: tuple, target_pos: tuple, target_width: int, min_steps: int = 100, difficulty_scaling_coef: int = 1):
 
     D = math.dist(current_pos, target_pos)
     return math.ceil(min_steps + difficulty_scaling_coef*math.log2((2*D/target_width) + 1))
