@@ -55,6 +55,18 @@ def random_control_point():
 
 
 def fitts_law(current_pos: tuple, target_pos: tuple, target_width: int, min_steps: int = 100, difficulty_scaling_coef: int = 1):
+    """use Fitts law of human-computer interaction difficulty index
+        Source: https://en.wikipedia.org/wiki/Fitts%27s_law#Bits_per_second:_model_innovations_driven_by_information_theory
 
+    Args:
+        current_pos (tuple): _description_
+        target_pos (tuple): _description_
+        target_width (int): _description_
+        min_steps (int, optional): _description_. Defaults to 100.
+        difficulty_scaling_coef (int, optional): _description_. Defaults to 1.
+
+    Returns:
+        _type_: _description_
+    """
     D = math.dist(current_pos, target_pos)
     return math.ceil(min_steps + difficulty_scaling_coef*math.log2((2*D/target_width) + 1))
